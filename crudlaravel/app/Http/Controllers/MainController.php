@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Buku;
 
 use Illuminate\Http\Request;
 
@@ -11,6 +12,12 @@ class MainController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function home()
+        {
+            $buku = Buku::all();
+            return view('home', ['buku' => $buku]);
+        }
+
     public function index()
     {
         //
@@ -23,7 +30,7 @@ class MainController extends Controller
      */
     public function create()
     {
-        //
+        return view('create');
     }
 
     /**

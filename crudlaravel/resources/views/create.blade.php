@@ -36,8 +36,8 @@
 					</div>
 
 					<div class="form-group">
-						<label for="exampleInputEmail4">Pengarang</label>
-						<input type="text" class="form-control" name="pengarang" placeholder="Pengarang Buku">
+						<label for="exampleInputEmail4">Pangarang</label>
+						<input type="text" class="form-control" name="pengarang" placeholder="Pangarang Buku">
 						
 					</div>
 

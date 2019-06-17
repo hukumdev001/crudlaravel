@@ -14,3 +14,13 @@
 Route::get('/', 'MainController@home');
 
 Route::get('/create', 'MainController@create');
+
+Route::post('/insert', 'MainController@store');
+
+Route::get('/update/{id}', 'MainController@update');
+
+Route::post('/edit/{id}', 'MainController@edit');
+
+Route::get('/view/{id}', 'MainController@view');
+
+Route::get('/delete/{id}', 'MainController@destroy');
